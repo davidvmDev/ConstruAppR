@@ -35,6 +35,10 @@ var routes = [
     path: '/settings/',
     component: SettingsPage,
   },
+  {
+    path:'/login-screen/',
+    url:'../static/login.html',
+  },
 
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',

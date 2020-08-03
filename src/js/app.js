@@ -43,7 +43,16 @@ var app = new Framework7({
       if (f7.device.cordova) {
         // Init cordova APIs (see cordova-app.js)
         cordovaApp.init(f7);
+        ls.open(animate);
       }
     },
   },
+  on: {
+  	pageInit: function (page) {
+    	console.log('page init: ', page.name)
+    }
+  },
 });
+
+var ls = app.loginScreen.create({ el: '.login-screen' });
+
